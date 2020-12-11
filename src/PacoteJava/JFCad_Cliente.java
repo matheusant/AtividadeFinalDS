@@ -191,6 +191,7 @@ public class JFCad_Cliente extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        tblClientes.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
         tblClientes.getTableHeader().setReorderingAllowed(false);
         tblClientes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -200,9 +201,11 @@ public class JFCad_Cliente extends javax.swing.JFrame {
         jScrollPane2.setViewportView(tblClientes);
         if (tblClientes.getColumnModel().getColumnCount() > 0) {
             tblClientes.getColumnModel().getColumn(0).setResizable(false);
-            tblClientes.getColumnModel().getColumn(0).setPreferredWidth(5);
+            tblClientes.getColumnModel().getColumn(0).setPreferredWidth(80);
             tblClientes.getColumnModel().getColumn(1).setResizable(false);
+            tblClientes.getColumnModel().getColumn(1).setPreferredWidth(240);
             tblClientes.getColumnModel().getColumn(2).setResizable(false);
+            tblClientes.getColumnModel().getColumn(2).setPreferredWidth(380);
         }
 
         jSeparator1.setBackground(new java.awt.Color(0, 0, 255));
